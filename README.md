@@ -2,8 +2,8 @@
 1- In our Model we preparing dataset for Garbage classification , divided it into training and validation sets. <br />
 2- We use ImageDataGenerator for data augmentation to enhance our model's ability to generalize. <br />
 3- Then we try different model as base model (MobileNet , Xception) for feature extraction, and we add a global average pooling layer to reduce the spatial dimensions. <br />
-&emsp;&emsp;Features that we extracted from the pre-trained model are for both training and testing datasets.
-4- Then we perform feature selection using a genetic algorithm. 
+&emsp;&emsp;Features that we extracted from the pre-trained model are for both training and testing datasets.<br />
+4- Then we perform feature selection using a genetic algorithm. <br />
 &emsp;&emsp;&emsp;a) We initialize a population of binary encoded feature vectors, this feature vector representing the presence or absence of features. <br />
 &emsp;&emsp;&emsp;b) Our Fitness function is evaluated using a support vector machine (SVM) classifier on the selected features.<br />
 &emsp;&emsp;&emsp;c) we select parents based on their fitness. We randomly select two indices for each member of the population, compare their fitness, and select the one with higher fitness as a parent. <br />
